@@ -190,8 +190,10 @@ public class Relationships {
 			for(int i = 0;i<Subject.getChildren().size();i++){
 				childrenList.add(Subject.getChildren().get(i).getName());
 			}
-			for(int i = 0;i<Subject.getSpouse().getChildren().size();i++){
-				childrenList.add(Subject.getSpouse().getChildren().get(i).getName());
+			if(Subject.getSpouse() != null){
+				for(int i = 0;i<Subject.getSpouse().getChildren().size();i++){
+					childrenList.add(Subject.getSpouse().getChildren().get(i).getName());
+				}
 			}
 			Iterator<String> it = childrenList.iterator();
 			int j = 0;
