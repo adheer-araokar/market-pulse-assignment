@@ -96,7 +96,5 @@ public class Parser {
 		           System.out.println("Invalid Option!");
 		    }
 		}while(!option.equalsIgnoreCase("E"));
-	
 	}
-
 }
